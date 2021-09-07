@@ -11,6 +11,10 @@
 		F51F510A26E3B98400EADFE4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F510926E3B98400EADFE4 /* AuthManager.swift */; };
 		F51F510C26E3B9D500EADFE4 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F510B26E3B9D500EADFE4 /* StorageManager.swift */; };
 		F51F510E26E3EF0300EADFE4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F510D26E3EF0300EADFE4 /* Extensions.swift */; };
+		F52CCC7F26E7ABC2003AD27C /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CCC7E26E7ABC2003AD27C /* IGFeedPostTableViewCell.swift */; };
+		F52CCC8226E7AF0A003AD27C /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CCC8126E7AF0A003AD27C /* IGFeedPostHeaderTableViewCell.swift */; };
+		F52CCC8426E7AF5E003AD27C /* IGFeedPostActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CCC8326E7AF5E003AD27C /* IGFeedPostActionTableViewCell.swift */; };
+		F52CCC8626E7AF88003AD27C /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CCC8526E7AF88003AD27C /* IGFeedPostGeneralTableViewCell.swift */; };
 		F5AD361E26E39EF700924FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD361D26E39EF700924FA6 /* AppDelegate.swift */; };
 		F5AD362026E39EF700924FA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD361F26E39EF700924FA6 /* SceneDelegate.swift */; };
 		F5AD362226E39EF700924FA6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD362126E39EF700924FA6 /* HomeViewController.swift */; };
@@ -43,6 +47,10 @@
 		F51F510926E3B98400EADFE4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		F51F510B26E3B9D500EADFE4 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		F51F510D26E3EF0300EADFE4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F52CCC7E26E7ABC2003AD27C /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		F52CCC8126E7AF0A003AD27C /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		F52CCC8326E7AF5E003AD27C /* IGFeedPostActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionTableViewCell.swift; sourceTree = "<group>"; };
+		F52CCC8526E7AF88003AD27C /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		F5AD361A26E39EF700924FA6 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AD361D26E39EF700924FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5AD361F26E39EF700924FA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +112,25 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		F52CCC7D26E7AB9B003AD27C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F52CCC8026E7AEC6003AD27C /* Home Feed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F52CCC8026E7AEC6003AD27C /* Home Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F52CCC7E26E7ABC2003AD27C /* IGFeedPostTableViewCell.swift */,
+				F52CCC8126E7AF0A003AD27C /* IGFeedPostHeaderTableViewCell.swift */,
+				F52CCC8326E7AF5E003AD27C /* IGFeedPostActionTableViewCell.swift */,
+				F52CCC8526E7AF88003AD27C /* IGFeedPostGeneralTableViewCell.swift */,
+			);
+			path = "Home Feed";
+			sourceTree = "<group>";
+		};
 		F5AD361126E39EF700924FA6 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +173,7 @@
 		F5AD363226E39F5F00924FA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F52CCC7D26E7AB9B003AD27C /* Cells */,
 				F5AD363526E39FD000924FA6 /* Storyboards */,
 				F5AD362626E39F0500924FA6 /* Assets.xcassets */,
 			);
@@ -341,13 +369,17 @@
 				F5AD363926E3A07600924FA6 /* CameraViewController.swift in Sources */,
 				F5AD363B26E3A09800924FA6 /* NotificationViewController.swift in Sources */,
 				F5AD364426E3A18500924FA6 /* RegistrationViewController.swift in Sources */,
+				F52CCC8226E7AF0A003AD27C /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				F5AD365226E3A27100924FA6 /* PostEditorViewController.swift in Sources */,
 				F51F510C26E3B9D500EADFE4 /* StorageManager.swift in Sources */,
+				F52CCC8426E7AF5E003AD27C /* IGFeedPostActionTableViewCell.swift in Sources */,
 				F5AD364626E3A19D00924FA6 /* PostViewController.swift in Sources */,
 				F51F510826E3B86900EADFE4 /* DatabaseManager.swift in Sources */,
 				F5AD362226E39EF700924FA6 /* HomeViewController.swift in Sources */,
+				F52CCC7F26E7ABC2003AD27C /* IGFeedPostTableViewCell.swift in Sources */,
 				F5AD365026E3A23C00924FA6 /* SearchResultViewController.swift in Sources */,
 				F5AD364226E3A16E00924FA6 /* LoginViewController.swift in Sources */,
+				F52CCC8626E7AF88003AD27C /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				F51F510E26E3EF0300EADFE4 /* Extensions.swift in Sources */,
 				F5AD364E26E3A22900924FA6 /* SearchViewController.swift in Sources */,
 				F5AD363D26E3A0B100924FA6 /* ProfileViewController.swift in Sources */,
